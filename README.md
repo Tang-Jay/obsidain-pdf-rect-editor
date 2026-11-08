@@ -2,35 +2,29 @@
 
 Resize and move PDF++ rectangular selections with the mouse, updating Markdown links and Excalidraw crops.
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 An independent companion plugin for [PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus), maintained by [Tang-Jay](https://github.com/Tang-Jay). This is not an official PDF++ release.
 
-## Three steps to adjust an existing region / 三步调整已有选区
+## Three steps to adjust an existing region
 
 **Adjust the region you already added to your note. No need to draw a new selection and insert it again.** The original note reference is updated when you release the mouse.
 
-**直接调整已添加到笔记中的选区，无需重新框选、再次插入笔记。** 松开鼠标后自动保存，并更新原笔记中的选区引用。
-
-### 1. Right-click to edit / 右键进入编辑
+### 1. Right-click to edit
 
 Right-click inside an existing region or near its border, then choose **编辑选区** (Edit region).
 
-在已有选区内或边缘附近单击右键，选择菜单中的 **“编辑选区”**。
-
 ![Step 1: right-click the existing PDF region and choose 编辑选区](docs/images/01-edit-region-menu.png)
 
-### 2. Drag to adjust the region / 拖动调整范围
+### 2. Drag to adjust the region
 
 Drag a corner or edge handle to resize the region. Drag inside the box to move it.
 
-拖动选框四角或边缘的手柄，调整选区范围；拖动框内区域可以移动整个选区。
-
 ![Step 2: drag the yellow selection handles to adjust the PDF region](docs/images/02-resize-region.png)
 
-### 3. Release to save / 松开自动保存
+### 3. Release to save
 
 Release the mouse to save the new region and return to viewing mode. The existing note reference is updated automatically, so you can keep reading without recreating the selection or adding it to your note again.
-
-松开鼠标后，新范围自动保存并返回展示状态，原笔记中的选区引用同步更新。无需二次画出选区，也无需重新添加到笔记，可以直接继续阅读。
 
 ![Step 3: the adjusted PDF region after releasing the mouse to save](docs/images/03-region-saved.png)
 
@@ -60,14 +54,20 @@ The PDF viewer integration uses internal Obsidian interfaces, PDF++ settings and
 
 ## Installation
 
-Until the plugin is listed in the community directory, install it manually:
+Install and enable PDF++ first. Enable Excalidraw if you need drawing support.
+
+### Community directory
+
+Open the [community listing](https://community.obsidian.md/plugins/pdf-rect-editor) and choose **Add to Obsidian**, or search for **PDF++ Region Editor** under **Settings → Community plugins → Browse**. If the entry is not yet available in your client, use manual installation below.
+
+### Manual installation
 
 1. Install and enable PDF++ in Obsidian. Enable Excalidraw if you need drawing support.
 2. Download `main.js`, `manifest.json` and `styles.css` from a published [GitHub release](https://github.com/Tang-Jay/obsidain-pdf-rect-editor/releases).
 3. Create `<vault>/.obsidian/plugins/pdf-rect-editor/` and place the three files directly inside it.
 4. Restart Obsidian, then enable **PDF++ Region Editor** under **Settings → Community plugins**.
 
-If no release has been published yet, build from source using the instructions below and copy the same three files.
+You can also build from source using the instructions below and copy the same three files.
 
 ## Usage
 
@@ -140,16 +140,3 @@ PDF++ and Excalidraw are separate installed plugins; their source and binaries a
 - [PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus) by Ryota Ushio provides the region-link workflow this companion extends.
 - [Excalidraw for Obsidian](https://github.com/zsviczian/obsidian-excalidraw-plugin) provides drawing and PDF-crop integration.
 - [Obsidian](https://obsidian.md) provides the plugin host and PDF viewer.
-
-## 中文说明
-
-PDF++ Region Editor 是为 PDF++ 开发的独立配套插件，可以用鼠标移动、缩放已有的 PDF 矩形选区，并同步 Markdown 链接或 Excalidraw 图片裁切、尺寸和独立画框。它不会修改 PDF 原文件。
-
-- **笔记中编辑**：将光标放在含 `rect=` 的 PDF 链接中，运行“编辑光标所在的 PDF 选区”，调整后点击“保存选区”。
-- **PDF 内编辑**：右键选区 → “编辑选区”，拖动并松开鼠标后自动保存；拖动时按 Esc 取消。可通过右键菜单撤销上次调整。
-- **画布中编辑**：选中一个 PDF 裁切图片或只包含该图片的画框，运行“编辑选中的 Excalidraw PDF 选区”。
-- **多来源切换**：在 PDF 右键菜单中选择“选区来源笔记”。
-
-当前支持桌面端，界面使用中文。需要先启用 PDF++；画布功能另需 Excalidraw。暂不支持关联 `annotation` 的链接、旋转后的画布元素或包含多个元素的画框。
-
-`0.4.3` 已在 macOS 15.7.9、Obsidian 1.15.0、PDF++ 0.40.31 和 Excalidraw 2.29.1 中完成 28 项应用内集成检查，并通过 18 项单元测试。最低 Obsidian 版本保守设为已实测的 1.15.0；尚未验证 Windows、Linux、移动端或更早版本。代码采用 MIT 许可证。
