@@ -4,6 +4,36 @@ Resize and move PDF++ rectangular selections with the mouse, updating Markdown l
 
 An independent companion plugin for [PDF++](https://github.com/RyotaUshio/obsidian-pdf-plus), maintained by [Tang-Jay](https://github.com/Tang-Jay). This is not an official PDF++ release.
 
+## Three steps to adjust an existing region / 三步调整已有选区
+
+**Adjust the region you already added to your note. No need to draw a new selection and insert it again.** The original note reference is updated when you release the mouse.
+
+**直接调整已添加到笔记中的选区，无需重新框选、再次插入笔记。** 松开鼠标后自动保存，并更新原笔记中的选区引用。
+
+### 1. Right-click to edit / 右键进入编辑
+
+Right-click inside an existing region or near its border, then choose **编辑选区** (Edit region).
+
+在已有选区内或边缘附近单击右键，选择菜单中的 **“编辑选区”**。
+
+![Step 1: right-click the existing PDF region and choose 编辑选区](docs/images/01-edit-region-menu.png)
+
+### 2. Drag to adjust the region / 拖动调整范围
+
+Drag a corner or edge handle to resize the region. Drag inside the box to move it.
+
+拖动选框四角或边缘的手柄，调整选区范围；拖动框内区域可以移动整个选区。
+
+![Step 2: drag the yellow selection handles to adjust the PDF region](docs/images/02-resize-region.png)
+
+### 3. Release to save / 松开自动保存
+
+Release the mouse to save the new region and return to viewing mode. The existing note reference is updated automatically, so you can keep reading without recreating the selection or adding it to your note again.
+
+松开鼠标后，新范围自动保存并返回展示状态，原笔记中的选区引用同步更新。无需二次画出选区，也无需重新添加到笔记，可以直接继续阅读。
+
+![Step 3: the adjusted PDF region after releasing the mouse to save](docs/images/03-region-saved.png)
+
 ## Features
 
 - Move a region or resize it using eight handles.
