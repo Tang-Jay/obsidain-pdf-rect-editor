@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-08",
+  "pluginVersion": "0.4.3",
+  "method": "Obsidian CLI-driven checks in the running application",
+  "checks": [
+    {
+      "name": "Markdown modal loads actual PDF",
+      "pass": true
+    },
+    {
+      "name": "Markdown save changes only chosen occurrence",
+      "pass": true
+    },
+    {
+      "name": "Markdown editor undo restores source",
+      "pass": true
+    },
+    {
+      "name": "Dialog cancel leaves note unchanged",
+      "pass": true
+    },
+    {
+      "name": "Preview rotates by 90 degrees",
+      "pass": true
+    },
+    {
+      "name": "Rotated preview saves correct PDF coordinates",
+      "pass": true
+    },
+    {
+      "name": "Rotated PDF page loads",
+      "pass": true
+    },
+    {
+      "name": "Concurrent note edit refuses stale save",
+      "pass": true
+    },
+    {
+      "name": "PDF viewer discovers all three region links",
+      "pass": true
+    },
+    {
+      "name": "Native selection enters edit mode",
+      "pass": true
+    },
+    {
+      "name": "Native resize persists to actual note editor",
+      "pass": true
+    },
+    {
+      "name": "Native edit preserves duplicate and color",
+      "pass": true
+    },
+    {
+      "name": "Native undo restores original note",
+      "pass": true
+    },
+    {
+      "name": "Native Escape exits without saving",
+      "pass": true
+    },
+    {
+      "name": "Native concurrent edit refuses stale write",
+      "pass": true
+    },
+    {
+      "name": "Actual Excalidraw PDF crop opens editor",
+      "pass": true
+    },
+    {
+      "name": "Excalidraw image crop and dimensions save",
+      "pass": true
+    },
+    {
+      "name": "Excalidraw link and frame update together",
+      "pass": true
+    },
+    {
+      "name": "Excalidraw saved crop persists on disk",
+      "pass": true
+    },
+    {
+      "name": "Excalidraw undo restores crop and frame",
+      "pass": true
+    },
+    {
+      "name": "Concurrent drawing move refuses stale save",
+      "pass": true
+    },
+    {
+      "name": "Closed drawing reopens for a pending save",
+      "pass": true
+    },
+    {
+      "name": "Reopened drawing undo restores source",
+      "pass": true
+    },
+    {
+      "name": "Context-menu hook keeps existing items and adds editor",
+      "pass": true
+    },
+    {
+      "name": "Native edit persists when note editor is closed",
+      "pass": true
+    },
+    {
+      "name": "Closed-note undo restores disk content",
+      "pass": true
+    },
+    {
+      "name": "Unload removes overlays and restores menu hook",
+      "pass": true
+    },
+    {
+      "name": "Plugin reload succeeds",
+      "pass": true
+    }
+  ]
+}

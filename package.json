@@ -1,6 +1,7 @@
 {
   "name": "pdf-rect-editor",
-  "version": "0.4.2",
+  "version": "0.4.3",
+  "license": "MIT",
   "private": true,
   "description": "Resize and move PDF++ rectangular selections, updating Markdown links and Excalidraw crops.",
   "author": "Tang-Jay",
