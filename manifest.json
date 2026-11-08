@@ -1,0 +1,10 @@
+{
+  "id": "pdf-rect-editor",
+  "name": "PDF++ Region Editor",
+  "version": "0.4.2",
+  "minAppVersion": "1.6.5",
+  "description": "Resize and move PDF++ rectangular selections, updating Markdown links and Excalidraw crops.",
+  "author": "Tang-Jay",
+  "authorUrl": "https://github.com/Tang-Jay",
+  "isDesktopOnly": true
+}

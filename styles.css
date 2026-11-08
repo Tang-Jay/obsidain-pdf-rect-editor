@@ -1,0 +1,32 @@
+.pdf-rect-editor-modal {width:min(1100px,94vw);max-width:94vw;}
+.pdf-rect-editor-modal .modal-content {overflow:hidden;}
+.pre-tools {display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+.pre-tools span {font-size:var(--font-ui-small);font-variant-numeric:tabular-nums;}
+.pre-scroll {height: min(65vh,850px);overflow:auto;background:var(--background-secondary);padding:12px;}
+.pre-stage {position:relative;margin:0 auto;background:white;line-height:0;}
+.pre-stage canvas {display:block;}
+.pre-selection {position:absolute;box-sizing:border-box;border:2px solid var(--pre-selection-color,#e7a600);background:var(--pre-selection-fill,rgba(255,213,0,.13));cursor:move;touch-action:none;z-index:1;}
+.pre-handle {position:absolute;width:12px;height:12px;background:#fff;border:2px solid var(--pre-selection-color,#b77c00);box-sizing:border-box;border-radius:2px;}
+.pre-nw{left:-7px;top:-7px;cursor:nwse-resize}.pre-n{left:calc(50% - 6px);top:-7px;cursor:ns-resize}.pre-ne{right:-7px;top:-7px;cursor:nesw-resize}.pre-e{right:-7px;top:calc(50% - 6px);cursor:ew-resize}.pre-se{right:-7px;bottom:-7px;cursor:nwse-resize}.pre-s{left:calc(50% - 6px);bottom:-7px;cursor:ns-resize}.pre-sw{left:-7px;bottom:-7px;cursor:nesw-resize}.pre-w{left:-7px;top:calc(50% - 6px);cursor:ew-resize}
+.pdf-rect-editor-modal {max-height:90vh;display:flex;flex-direction:column;}
+.pdf-rect-editor-modal .modal-content {display:flex;flex-direction:column;min-height:0;flex:1;}
+.pdf-rect-editor-modal .modal-content > p,.pdf-rect-editor-modal .pre-tools,.pdf-rect-editor-modal .modal-button-container {flex-shrink:0;}
+.pdf-rect-editor-modal .pre-scroll {flex:1;min-height:150px;height:55vh;}
+.pdf-rect-editor-modal .modal-button-container {margin-top:12px;}
+
+/* Constrain the complete dialog; only the PDF page scrolls. */
+.pdf-rect-editor-modal {height:88vh;max-height:88vh;overflow:hidden;}
+.pdf-rect-editor-modal .modal-content {overflow:hidden;flex:1 1 0;min-height:0;}
+.pdf-rect-editor-modal .pre-scroll {flex:1 1 0;min-height:0;height:auto;}
+.pdf-rect-editor-modal .modal-button-container {flex:0 0 auto;position:relative;background:var(--background-primary);padding-top:8px;}
+.pre-native-bar {display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:6px 10px;background:var(--background-secondary);border-bottom:1px solid var(--background-modifier-border);font-size:var(--font-ui-small);flex-shrink:0;}
+.pre-native-bar select {max-width:300px;}
+.pre-native-layer {position:absolute;left:0;top:0;pointer-events:none;z-index:30;}
+.pre-native-selection {pointer-events:auto;line-height:normal;}
+.pre-native-selection .pre-handle {width:10px;height:10px;}
+.pre-native-label {position:absolute;left:0;bottom:100%;font-size:11px;line-height:16px;background:#fff4bc;color:#604300;max-width:250px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+/* Normal mode leaves PDF++ highlights and context menus in control. */
+.pre-native-selection {pointer-events:none;border-color:transparent;background:transparent;cursor:default;}
+.pre-native-selection .pre-handle,.pre-native-selection .pre-native-label {display:none;}
+.pre-native-selection.pre-editing {pointer-events:auto;border-color:var(--pre-selection-color,#e7a600);background:var(--pre-selection-fill,rgba(255,213,0,.13));cursor:move;}
+.pre-native-selection.pre-editing .pre-handle,.pre-native-selection.pre-editing .pre-native-label {display:block;}

@@ -1,0 +1,18 @@
+{
+  "name": "pdf-rect-editor",
+  "version": "0.4.2",
+  "private": true,
+  "description": "Resize and move PDF++ rectangular selections, updating Markdown links and Excalidraw crops.",
+  "author": "Tang-Jay",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tang-Jay/obsidain-pdf-rect-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tang-Jay/obsidain-pdf-rect-editor/issues"
+  },
+  "scripts": {
+    "build": "node build.cjs",
+    "test": "node --test tests/*.test.cjs"
+  }
+}
